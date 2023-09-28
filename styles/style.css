@@ -111,6 +111,10 @@ ol {
   font-family: inherit;
   font-size: inherit;
   width: 225px;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .search-form__textfield:focus {
@@ -123,7 +127,7 @@ ol {
   gap: 15px;
 }
 
-.search-form__label {
+.search-form__checkbox-list .search-form__label {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -187,6 +191,7 @@ input[type="checkbox"]:checked + span {
 
 .more-button {
   width: 100%;
+  margin: 0 2px;
 }
 
 .content__details {
@@ -221,6 +226,24 @@ input[type="checkbox"]:checked + span {
 .content__card-link {
   color: #FFF;
   text-decoration: none;
+  display: block;
+  margin: 2px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.content__card-link_current {
+  background: #545050;
 }
 
 .content__video-card {
